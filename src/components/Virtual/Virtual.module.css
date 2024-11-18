@@ -1,0 +1,63 @@
+.Virtual{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+.left>:nth-child(1){
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+}
+.left>:nth-child(2){
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    display: block;
+    width: 20rem;
+}
+.left>:nth-child(3){
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.left img{
+    position: absolute;
+    width: 8rem;
+    bottom: 6rem;
+    left: -1rem;
+}
+.wrapper{
+    width: 30rem;
+}
+
+@media screen and (max-width: 856px) {
+    .Virtual{
+        gap: 2rem !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+        padding: 1rem !important;
+        text-align: center !important;
+    }
+    .nam{
+        position: relative;
+        top: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+   
+    .wrapper{
+        width: 25rem;
+    }
+}
